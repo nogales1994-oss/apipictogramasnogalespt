@@ -1,0 +1,12 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Redirección SPA: cualquier ruta del cliente se sirve con index.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
